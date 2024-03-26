@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
-        <div className="logo">FI3STY</div>
+        <div className="logo">FEASTY</div>
         <div className="search-bar">
           <input type="search" placeholder="Search for restaurant and food" />
           <FaSearch className="search-icon" />

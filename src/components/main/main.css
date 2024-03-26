@@ -1,0 +1,13 @@
+.main {
+  height: 100vh;
+}
+
+.mainContainer {
+  max-width: 120em;
+  margin: 0 auto;
+  padding: 5.6rem 0;
+}
+
+.mainheading h2 {
+  font-size: 3em;
+}

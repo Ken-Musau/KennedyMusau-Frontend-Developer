@@ -25,6 +25,7 @@
   font-size: 3em;
   color: #f76707;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .search-bar {
