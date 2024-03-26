@@ -1,0 +1,5 @@
+.hero {
+  height: calc(100vh - 7em);
+  /* background-color: green; */
+  margin-top: 7em;
+}
