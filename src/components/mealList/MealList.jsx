@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MealCard from "../mealcard/MealCard";
+import "./meallist.css";
 
 function MealList() {
   const baseUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?a=indian";
@@ -25,9 +26,11 @@ function MealList() {
 
   return (
     <div>
-      {meals.map((meal) => (
-        <MealCard key={meal.idMeal} meal={meal} />
-      ))}
+      <div className="mealListContainer">
+        {meals.map((meal) => (
+          <MealCard key={meal.idMeal} meal={meal} />
+        ))}
+      </div>
     </div>
   );
 }
