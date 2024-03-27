@@ -5,9 +5,28 @@
 .mainContainer {
   max-width: 120em;
   margin: 0 auto;
-  padding: 5.6rem 0;
+  padding: 5rem 0;
 }
 
 .mainheading h2 {
-  font-size: 3em;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.sort-btns {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 1em;
+  justify-content: flex-start;
+}
+.sort-btns .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 1.3em;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  border: 0.1px solid #dee2e6;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.09em 0.2em rgba(0, 0, 0, 0.1);
 }

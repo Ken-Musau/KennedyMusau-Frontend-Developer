@@ -7,7 +7,7 @@
 .heroContainer {
   max-width: 120em;
   margin: 0 auto;
-  padding: 9.6rem 0;
+  padding: 6rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 9.6rem;
@@ -21,19 +21,20 @@
 }
 
 .textContainer h1 {
-  font-size: 7em;
+  font-size: 6em;
   font-weight: bold;
   margin-bottom: 0.1em;
 }
 
 .textContainer p {
   letter-spacing: 0.1em;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .imageContainer img {
-  width: 60em;
+  max-width: 60em;
   border-radius: 7px;
+  background-size: cover;
 }
 
 /* hero.css */
@@ -41,7 +42,7 @@
   background-color: #fd7e14;
   color: white;
   border: none;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
