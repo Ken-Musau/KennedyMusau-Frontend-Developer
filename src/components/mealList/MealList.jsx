@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import MealCard from "../mealcard/MealCard";
 import "./meallist.css";
 
-function MealList() {
-  const baseUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?a=indian";
+function MealList({ selectedArea }) {
+  const baseUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedArea}`;
   const [meals, setMeals] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function MealList() {
     };
 
     fetchMeals();
-  }, []);
+  }, [baseUrl]);
 
   return (
     <div>

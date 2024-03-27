@@ -37,6 +37,8 @@
   transform: scale(1.06);
 }
 
+/* Dropdown styling */
+
 .dropdown {
   position: absolute;
   background-color: #fff;
@@ -57,4 +59,22 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
+}
+
+.dropdown button {
+  gap: 0.6em;
+  font-size: 1.1em;
+  color: #f8f9fa;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  border: 0.1px solid #dee2e6;
+  background-color: #ffa94d;
+  cursor: pointer;
+
+  box-shadow: 0 0.09em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+.dropdown button:hover {
+  background-color: #fd7e14;
+  color: #fff;
 }

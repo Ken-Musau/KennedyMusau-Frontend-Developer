@@ -7,7 +7,7 @@ import Dropdown from "./Dropdown";
 
 function Main() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedArea, setSelectedArea] = useState("");
+  const [selectedArea, setSelectedArea] = useState("indian");
   const areas = ["Indian", "Kenyan", "Canadian", "Jamaican"];
 
   const toggleDropdown = () => {
@@ -20,6 +20,8 @@ function Main() {
     // Close dropdown after applying filter
     setShowDropdown(false);
   };
+
+  console.log(selectedArea);
 
   return (
     <div className="main">
@@ -50,7 +52,7 @@ function Main() {
         />
 
         <div>
-          <MealList />
+          <MealList selectedArea={selectedArea} />
         </div>
       </div>
     </div>
