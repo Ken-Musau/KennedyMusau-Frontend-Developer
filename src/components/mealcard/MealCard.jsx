@@ -1,7 +1,7 @@
 import "./mealcard.css";
 import { MdStars } from "react-icons/md";
-function MealCard({ meal }) {
-  const { strMeal, strMealThumb } = meal;
+function MealCard({ meal, onGetMealId }) {
+  const { strMeal, strMealThumb, idMeal } = meal;
 
   // Function to generate a random number between min and max (inclusive)
   const getRandomNumber = (min, max) => {
@@ -9,9 +9,11 @@ function MealCard({ meal }) {
   };
 
   // Generating a random number between 1.0 and 5.0
+
   const rating = getRandomNumber(1.0, 5.0);
+
   return (
-    <div className="mealcard">
+    <div className="mealcard" onClick={() => onGetMealId(idMeal)}>
       <div className="mealCardContainer">
         <div className="mealImageContainer">
           <img src={strMealThumb} alt="" />
