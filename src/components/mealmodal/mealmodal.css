@@ -9,14 +9,16 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+  padding: 0 2em;
 }
 
 .modal {
   background-color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  width: 800px;
-  height: 400px;
+  padding: 2em;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .modal-header {
@@ -41,29 +43,56 @@
 }
 
 .tags button {
-  margin-right: 1em;
-  margin-bottom: 2em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 1em;
-  padding: 0.4em 1em;
+  padding: 0.3em 0.8em;
   border-radius: 20px;
   color: #fff;
-  border: 0.1px solid #dee2e6;
-  background-color: #adb5bd;
-
-  box-shadow: 0 0.09em 0.2em rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #6c757d;
 }
 
-.media {
-  display: flex;
+.mealContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  gap: 2em;
 }
 
-.media img {
-  width: 200px;
-  margin-right: 20px;
+.mealRecipe {
+  font-size: 1.6em;
+}
+
+.mealRecipe h3 {
+  font-size: 1.2em;
+}
+.mealContent img {
+  margin-top: 2em;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 38em) {
+  .mealContent {
+    grid-template-columns: 1fr;
+  }
+  .mealRecipe p {
+    font-size: 1em;
+  }
+}
+
+.modal-footer button {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.media video {
-  width: 400px;
+.modal-footer button:hover {
+  background-color: #495057;
 }

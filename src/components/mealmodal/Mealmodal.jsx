@@ -49,11 +49,18 @@ function Mealmodal({ mealId, onClose }) {
           <button>{strArea}</button>
         </div>
 
-        <div className="media">
-          <img src={strMealThumb} alt="" />
-          <p>{strInstructions}</p>
+        <div className="mealContent">
+          <div className="imageContainer">
+            <img src={strMealThumb} alt="" />
+          </div>
+          <div className="mealRecipe">
+            <h3>Recipe</h3>
+            <p>{strInstructions}</p>
+          </div>
         </div>
-        <div className="modal-footer"></div>
+        <div className="modal-footer">
+          <button onClick={() => onClose(null)}>Close</button>
+        </div>
       </div>
     </div>
   );
