@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./main.css";
 import { IoFilterOutline } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa";
+import { FaSortAlphaUp } from "react-icons/fa";
 import MealList from "../mealList/MealList";
 import Dropdown from "./Dropdown";
 
@@ -70,7 +70,7 @@ function Main() {
             Filter <IoFilterOutline />
           </button>
           <button className="btn sortBy" onClick={handleSortBy}>
-            Sort By <FaAngleDown />
+            Sort By <FaSortAlphaUp />
           </button>
           <button className="btn">Fast Delivery</button>
           <button className="btn">New on Feasty</button>
