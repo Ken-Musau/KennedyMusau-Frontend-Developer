@@ -1,7 +1,3 @@
-Certainly! Below is a sample README file for your project:
-
----
-
 # Feasty - Online Food Delivery Platform
 
 Feasty is an online platform that allows users to discover food from various restaurants. This project provides a frontend interface built with React.js to browse restaurants and their available meals, apply filters, and sort meals alphabetically.

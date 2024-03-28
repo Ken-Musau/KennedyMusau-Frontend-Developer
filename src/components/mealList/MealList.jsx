@@ -15,6 +15,7 @@ function MealList({ meals }) {
     setSelectedMeal(id);
   };
 
+  
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = meals.slice(firstPostIndex, lastPostIndex);
