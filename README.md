@@ -2,6 +2,10 @@
 
 Feasty is an online platform that allows users to discover food from various restaurants. This project provides a frontend interface built with React.js to browse restaurants and their available meals, apply filters, and sort meals alphabetically.
 
+## Deployed Live Link
+
+https://kenmusau-foodmenu.vercel.app/
+
 ## Features
 
 - Browse restaurants with online food delivery.
