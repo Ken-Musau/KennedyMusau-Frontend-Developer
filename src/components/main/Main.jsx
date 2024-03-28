@@ -9,6 +9,7 @@ function Main() {
   const [meals, setMeals] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedArea, setSelectedArea] = useState("indian");
+  const [sortBy, setSortBy] = useState(null);
 
   const baseUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedArea}`;
 
@@ -22,15 +23,24 @@ function Main() {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setMeals(data.meals);
-        console.log(data.meals);
+        let sortedMeals = data.meals;
+        if (sortBy === "asc") {
+          sortedMeals = data.meals
+            .slice()
+            .sort((a, b) => a.strMeal.localeCompare(b.strMeal));
+        } else if (sortBy === "desc") {
+          sortedMeals = data.meals
+            .slice()
+            .sort((a, b) => b.strMeal.localeCompare(a.strMeal));
+        }
+        setMeals(sortedMeals);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchMeals();
-  }, [baseUrl]);
+  }, [baseUrl, sortBy]);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -43,12 +53,10 @@ function Main() {
     setShowDropdown(false);
   };
 
-  // const sortMealsAlphabetically = () => {
-  //   const sortedMeals = [...meals].sort((a, b) =>
-  //     a.strMeal.localeCompare(b.strMeal)
-  //   );
-  //   setMeals(sortedMeals);
-  // };
+  const handleSortBy = () => {
+    // Toggle sorting order between ascending and descending
+    setSortBy(sortBy === "asc" ? "desc" : "asc");
+  };
 
   return (
     <div className="main">
@@ -61,7 +69,7 @@ function Main() {
           <button className="btn filterByArea" onClick={toggleDropdown}>
             Filter <IoFilterOutline />
           </button>
-          <button className="btn sortBy">
+          <button className="btn sortBy" onClick={handleSortBy}>
             Sort By <FaAngleDown />
           </button>
           <button className="btn">Fast Delivery</button>
