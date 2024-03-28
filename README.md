@@ -21,7 +21,7 @@ Feasty is an online platform that allows users to discover food from various res
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/feasty.git
+   git clone https://github.com/Ken-Musau/KennedyMusau-Frontend-Developer..git
    ```
 
 2. Navigate to the project directory:
@@ -70,7 +70,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize this README file based on your project's specific details and requirements.
