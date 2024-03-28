@@ -9,7 +9,7 @@ function MealList({ meals }) {
   const [selectedMeal, setSelectedMeal] = useState("");
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(4);
+  const [postsPerPage, setPostsPerPage] = useState(8);
 
   const handleGetMealId = (id) => {
     setSelectedMeal(id);
