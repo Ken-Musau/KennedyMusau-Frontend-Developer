@@ -2,6 +2,7 @@
   /* height: calc(100vh - 7em); */
   background-color: #f8f9fa;
   margin-top: 7em;
+  padding: 0 2em;
 }
 
 .heroContainer {
@@ -21,7 +22,7 @@
 }
 
 .textContainer h1 {
-  font-size: 6em;
+  font-size: 5.5em;
   font-weight: bold;
   margin-bottom: 0.1em;
 }
@@ -32,7 +33,7 @@
 }
 
 .imageContainer img {
-  max-width: 60em;
+  max-width: 100%;
   border-radius: 7px;
   background-size: cover;
 }
@@ -42,11 +43,11 @@
   background-color: #fd7e14;
   color: white;
   border: none;
-  padding: 1em 1.5em;
+  padding: 1em 1em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 2em;
   cursor: pointer;
   border-radius: 8px;
@@ -54,4 +55,46 @@
 
 .btn-cta:hover {
   background-color: #f76707;
+}
+
+@media (max-width: 80em) {
+  .textContainer h1 {
+    font-size: 4.5em;
+  }
+  .textContainer p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 60em) {
+  .textContainer h1 {
+    font-size: 3.5em;
+  }
+  .textContainer p {
+    font-size: 1.5em;
+  }
+
+  .btn-cta {
+    font-size: 1.2;
+    padding: 0.8em 0.8em;
+  }
+}
+
+@media (max-width: 45em) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .textContainer p {
+    width: 80%;
+    font-size: 2em;
+    margin: 1em auto;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .btn-cta {
+    font-size: 1.2;
+    padding: 1em 1.5em;
+  }
 }

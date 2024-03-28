@@ -9,7 +9,7 @@
   z-index: 1;
   transition: all 0.3 ease;
   border-bottom: 0.1em solid #dee2e6;
-  /* padding-bottom: 2em; */
+  padding: 0 2em;
 }
 
 .container {
