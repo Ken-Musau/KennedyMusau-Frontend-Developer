@@ -9,6 +9,7 @@ function Main() {
   const [meals, setMeals] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedArea, setSelectedArea] = useState("indian");
+
   const baseUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedArea}`;
 
   const areas = ["Indian", "Kenyan", "Canadian", "Jamaican", "American"];

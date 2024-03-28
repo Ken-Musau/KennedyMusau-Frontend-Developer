@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import "./mealmodal.css";
 
-function Mealmodal({ mealId, onGetMealId }) {
+function Mealmodal({ mealId, onClose }) {
   const baseUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
   const [meal, setMeal] = useState([]);
-  const { strMeal, strCategory, strArea, strMealThumb, strYoutube } = meal;
+  const { strMeal, strCategory, strArea, strMealThumb, strInstructions } = meal;
 
   useEffect(() => {
     const fetchMeals = async () => {
@@ -27,10 +27,17 @@ function Mealmodal({ mealId, onGetMealId }) {
 
   console.log(meal);
   return (
-    <div className="modal-container">
+    <div
+      className="modal-container"
+      onClick={(e) => {
+        if (e.target.className === "modal-container") {
+          onClose(null);
+        }
+      }}
+    >
       <div className="modal">
         <div className="modal-header">
-          <p className="close" onClick={() => onGetMealId("")}>
+          <p className="close" onClick={() => onClose(null)}>
             &times;
           </p>
         </div>
@@ -44,15 +51,7 @@ function Mealmodal({ mealId, onGetMealId }) {
 
         <div className="media">
           <img src={strMealThumb} alt="" />
-          {strYoutube && (
-            <video controls>
-              <source
-                src={strYoutube.replace("watch?v=", "embed/")}
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-          )}
+          <p>{strInstructions}</p>
         </div>
         <div className="modal-footer"></div>
       </div>

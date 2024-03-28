@@ -1,0 +1,28 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  background-color: #ffa94d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-container button:hover {
+  background-color: #ff7f00;
+}
+
+.pagination-container button:focus {
+  outline: none;
+}
+
+.pagination-container button.active {
+  background-color: #e8590c;
+}
