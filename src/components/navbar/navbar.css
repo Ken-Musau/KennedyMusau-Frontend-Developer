@@ -60,5 +60,17 @@
 
 .navbar.scrolled {
   box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
-  padding: 0.3em;
+  padding: 0 2em;
+}
+
+@media (max-width: 60em) {
+  .search-bar input[type="search"] {
+    width: 30em;
+  }
+}
+
+@media (max-width: 40em) {
+  .search-bar input[type="search"] {
+    width: 15em;
+  }
 }

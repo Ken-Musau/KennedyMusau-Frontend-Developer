@@ -65,16 +65,18 @@ function Main() {
           <h2>Restaurants with online food delivery</h2>
         </div>
 
-        <div className="sort-btns">
-          <button className="btn filterByArea" onClick={toggleDropdown}>
-            Filter <IoFilterOutline />
-          </button>
-          <button className="btn sortBy" onClick={handleSortBy}>
-            Sort By <FaSortAlphaUp />
-          </button>
-          <button className="btn">Fast Delivery</button>
-          <button className="btn">New on Feasty</button>
-          <button className="btn">Offers</button>
+        <div className="sort-btns-container">
+          <div className="sort-btns">
+            <button className="btn filterByArea" onClick={toggleDropdown}>
+              Filter <IoFilterOutline />
+            </button>
+            <button className="btn sortBy" onClick={handleSortBy}>
+              Sort By <FaSortAlphaUp />
+            </button>
+            <button className="btn">Fast Delivery</button>
+            <button className="btn">New on Feasty</button>
+            <button className="btn">Offers</button>
+          </div>
         </div>
 
         <Dropdown
