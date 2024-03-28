@@ -6,6 +6,10 @@ Feasty is an online platform that allows users to discover food from various res
 
 https://kenmusau-foodmenu.vercel.app/
 
+## Video
+
+https://drive.google.com/file/d/13LmRAHaK8C290vyxQ71D9YiCmakQYsAH/view
+
 ## Features
 
 - Browse restaurants with online food delivery.
