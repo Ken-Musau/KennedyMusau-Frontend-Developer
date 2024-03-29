@@ -29,7 +29,7 @@ https://drive.google.com/file/d/13LmRAHaK8C290vyxQ71D9YiCmakQYsAH/view
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/Ken-Musau/KennedyMusau-Frontend-Developer..git
+   git clone https://github.com/Ken-Musau/KennedyMusau-Frontend-Developer.git
    ```
 
 2. Navigate to the project directory:
@@ -44,22 +44,10 @@ https://drive.google.com/file/d/13LmRAHaK8C290vyxQ71D9YiCmakQYsAH/view
    npm install
    ```
 
-   or
-
-   ```bash
-   yarn install
-   ```
-
 4. Start the development server:
 
    ```bash
-   npm start
-   ```
-
-   or
-
-   ```bash
-   yarn start
+   npm run dev
    ```
 
 5. Open your browser and visit `http://localhost:3000` to view the application.
