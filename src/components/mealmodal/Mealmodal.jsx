@@ -25,7 +25,10 @@ function Mealmodal({ mealId, onClose }) {
     fetchMeals();
   }, [baseUrl]);
 
-  console.log(meal);
+  // Trim strInstructions to make it short
+  const trimmedInstructions = strInstructions
+    ? strInstructions.substring(0, 550)
+    : "";
   return (
     <div
       className="modal-container"
@@ -55,7 +58,7 @@ function Mealmodal({ mealId, onClose }) {
           </div>
           <div className="mealRecipe">
             <h3>Recipe</h3>
-            <p>{strInstructions}</p>
+            <p>{trimmedInstructions}</p>
           </div>
         </div>
         <div className="modal-footer">

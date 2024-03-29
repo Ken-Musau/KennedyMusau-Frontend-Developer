@@ -37,7 +37,7 @@
 }
 
 .meal-title {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -45,12 +45,12 @@
 .tags button {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 1em;
+  font-size: 1.4em;
   padding: 0.3em 0.8em;
   border-radius: 20px;
   color: #fff;
   border: none;
-  background-color: #fd7e14;
+  background-color: #fd7d14bd;
 }
 
 .mealContent {
@@ -60,13 +60,17 @@
   gap: 2em;
 }
 
-.mealRecipe {
-  font-size: 1.6em;
+.mealRecipe h3 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
 }
 
-.mealRecipe h3 {
-  font-size: 1.2em;
+.mealRecipe p {
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-style: italic;
 }
+
 .mealContent img {
   margin-top: 2em;
   max-width: 100%;
@@ -78,8 +82,13 @@
     grid-template-columns: 1fr;
   }
   .mealRecipe p {
-    font-size: 1em;
+    font-size: 1.5em;
   }
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .modal-footer button {
